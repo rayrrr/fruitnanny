@@ -1,9 +1,15 @@
 #!/usr/bin/python
 import sys
-import Adafruit_DHT
 
-pin = 24
-humidity, temperature = Adafruit_DHT.read_retry(Adafruit_DHT.DHT22, pin)
+import adafruit_dht
+import board
+
+# choose one or the other
+# dht_device = adafruit_dht.DHT22(board.D24)
+dht_device = adafruit_dht.DHT11(board.D24)
+
+humidity = dht_device.humidity
+temperature = dht_device.temperature
 if humidity is not None and temperature is not None:
     print('{0:0.1f} {1:0.1f}'.format(temperature, humidity))
 else:
