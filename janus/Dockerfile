@@ -21,6 +21,6 @@ RUN buildDeps="build-essential git debhelper gobject-introspection gtk-doc-tools
     && rm -rf /tmp/* \
     && rm -rf /var/lib/apt/lists/*
 
-COPY docker/janus/start.sh /start.sh
+COPY start.sh /start.sh
 
 CMD /start.sh
