@@ -44,7 +44,7 @@ Follow [installation instruction](INSTALLATION.md)
 
 # Configuration
 
-Modify [fruitnanny_config](./fruitnanny_config.js) to configure the baby monitor.
+Modify [fruitnanny_config](./fruitnanny/fruitnanny_config.js) to configure the baby monitor.
 
 Params:
 * `baby_name` - baby's name to display in UI

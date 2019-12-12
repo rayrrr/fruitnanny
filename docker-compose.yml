@@ -43,8 +43,6 @@ services:
     build: ./fruitnanny
     restart: always
     privileged: true
-    volumes:
-      - ./fruitnanny_config.js:/opt/fruitnanny/fruitnanny_config.js
     network_mode: "host"
     depends_on:
       - janus
