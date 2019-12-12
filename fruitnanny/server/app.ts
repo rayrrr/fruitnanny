@@ -1,6 +1,6 @@
 "use strict";
 
-import * as config from "../fruitnanny_config";
+import * as config from "../../fruitnanny_config";
 import custom_button from "./routes/custom_button";
 import dht from "./routes/dht";
 import express = require("express");

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const config = require("../fruitnanny_config");
+const config = require("../../fruitnanny_config");
 const custom_button_1 = require("./routes/custom_button");
 const dht_1 = require("./routes/dht");
 const express = require("express");
