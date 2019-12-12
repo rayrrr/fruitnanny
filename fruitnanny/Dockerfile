@@ -9,7 +9,7 @@ RUN buildDeps="build-essential python-dev python3-dev python-setuptools python3-
     && apt-get --purge remove -y $buildDeps && apt-get --purge -y autoremove \
     && apt-get clean && rm -rf /tmp/* && rm -rf /var/lib/apt/lists/*
 
-ADD . ../bin /opt/fruitnanny
+ADD . /opt/fruitnanny
 
 WORKDIR /opt/fruitnanny
 
