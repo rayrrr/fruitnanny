@@ -19,7 +19,7 @@ jobs:
           container.name: 'ivadim/fruitnanny-gstreamer'
         Fruitnanny:
           stage.name: 'fruitnanny'
-          container.name: 'ivadim/fruitnanny-app'
+          container.name: 'ivadim/fruitnanny-fruitnanny'
       maxParallel: 3
 
     steps:
