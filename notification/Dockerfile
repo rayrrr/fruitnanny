@@ -1,4 +1,4 @@
-FROM ivadim/fruitnanny-app
+FROM balenalib/raspberrypi3-debian-node:12.13-buster
 
 RUN apt-get update \
     && apt-get install -y libgpiod2 \
@@ -11,3 +11,6 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /tmp/* \
     && rm -rf /var/lib/apt/lists/*
+
+ADD . /opt/notification
+WORKDIR /opt/notification
